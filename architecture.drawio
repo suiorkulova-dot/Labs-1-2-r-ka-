@@ -1,0 +1,106 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="rental-ai-architecture" name="Архитектура">
+    <mxGraphModel dx="1800" dy="1307" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontStyle=1;fontSize=20;align=center;verticalAlign=middle;" value="Анализ и прогнозирование стоимости аренды жилой недвижимости&lt;br&gt;&lt;font style=&quot;font-size:14px&quot;&gt;Клиент-серверная архитектура с использованием искусственного интеллекта&lt;/font&gt;" vertex="1">
+          <mxGeometry height="65" width="1190" x="250" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="users" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f7ff;strokeColor=#9673a6;dashed=1;dashPattern=6 4;strokeWidth=2;fontStyle=1;fontSize=16;verticalAlign=top;spacingTop=12;" value="Пользователи" vertex="1">
+          <mxGeometry height="650" width="260" x="20" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="frontend" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#0b5394;strokeWidth=2;fontStyle=1;fontSize=17;verticalAlign=top;spacingTop=12;" value="Frontend&lt;br&gt;&lt;font style=&quot;font-size:13px&quot;&gt;Веб-интерфейс (HTML, CSS, JavaScript)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="650" width="350" x="320" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="backend" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#008040;strokeWidth=2;fontStyle=1;fontSize=17;verticalAlign=top;spacingTop=12;" value="Backend&lt;br&gt;&lt;font style=&quot;font-size:13px&quot;&gt;Python / FastAPI&lt;/font&gt;" vertex="1">
+          <mxGeometry height="650" width="390" x="720" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#a64d79;strokeWidth=2;fontSize=16;fontStyle=1;" value="База данных&lt;br&gt;&lt;font style=&quot;font-size:14px&quot;&gt;PostgreSQL&lt;/font&gt;&lt;br&gt;&lt;br&gt;Пользователи&lt;br&gt;Объявления&lt;br&gt;Характеристики жилья&lt;br&gt;Цены и история&lt;br&gt;Отзывы&lt;br&gt;История прогнозов" vertex="1">
+          <mxGeometry height="280" width="260" x="1400" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="ml" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=15;fontStyle=1;verticalAlign=top;spacingTop=10;" value="МОДЕЛЬ ИИ&lt;br&gt;&lt;font style=&quot;font-size:13px&quot;&gt;Python · scikit-learn&lt;/font&gt;&lt;br&gt;&lt;br&gt;Обработка данных&lt;br&gt;Обученная модель&lt;br&gt;Прогноз стоимости&lt;br&gt;Оценка точности" vertex="1">
+          <mxGeometry height="190" width="300" x="1370" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="sources" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f7ff;strokeColor=#9673a6;dashed=1;dashPattern=6 4;strokeWidth=2;fontStyle=1;fontSize=16;verticalAlign=top;spacingTop=12;" value="Внешние источники (опционально)&lt;br&gt;Карты / геолокация • Рыночные данные • Сезонные факторы" vertex="1">
+          <mxGeometry height="90" width="420" x="1250" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="tenant" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1f0ff;strokeColor=#6cace4;fontSize=14;align=center;spacing=8;" value="&lt;b&gt;Арендатор&lt;/b&gt;&lt;br&gt;Поиск жилья&lt;br&gt;Просмотр цен&lt;br&gt;Получение прогноза&lt;br&gt;Отзывы" vertex="1">
+          <mxGeometry height="155" width="230" x="35" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="landlord" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;align=center;spacing=8;" value="&lt;b&gt;Арендодатель&lt;/b&gt;&lt;br&gt;Размещение объявлений&lt;br&gt;Изменение цены&lt;br&gt;Управление объектами" vertex="1">
+          <mxGeometry height="155" width="230" x="35" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="adminuser" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;align=center;spacing=8;" value="&lt;b&gt;Администратор&lt;/b&gt;&lt;br&gt;Проверка объявлений&lt;br&gt;Управление пользователями&lt;br&gt;Контроль данных" vertex="1">
+          <mxGeometry height="155" width="230" x="35" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="search" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6cace4;strokeWidth=1.5;fontSize=13;align=left;spacing=8;" value="&lt;b&gt;Поиск и фильтры&lt;/b&gt;&lt;br&gt;Город, район, цена,&lt;br&gt;количество комнат, удобства" vertex="1">
+          <mxGeometry height="80" width="310" x="340" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="cards" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6cace4;strokeWidth=1.5;fontSize=13;align=left;spacing=8;" value="&lt;b&gt;Карточки недвижимости&lt;/b&gt;&lt;br&gt;Фото, характеристики,&lt;br&gt;цена, расположение" vertex="1">
+          <mxGeometry height="80" width="310" x="340" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="forecastform" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6cace4;strokeWidth=1.5;fontSize=13;align=left;spacing=8;" value="&lt;b&gt;Форма прогноза&lt;/b&gt;&lt;br&gt;Ввод параметров жилья&lt;br&gt;и получение цены" vertex="1">
+          <mxGeometry height="80" width="310" x="340" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="analyticsui" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6cace4;strokeWidth=1.5;fontSize=13;align=left;spacing=8;" value="&lt;b&gt;Аналитика&lt;/b&gt;&lt;br&gt;Графики средних цен,&lt;br&gt;сравнение районов" vertex="1">
+          <mxGeometry height="80" width="310" x="340" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="profile" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6cace4;strokeWidth=1.5;fontSize=13;align=left;spacing=8;" value="&lt;b&gt;Личный кабинет&lt;/b&gt;&lt;br&gt;Профиль, объявления,&lt;br&gt;избранное, отзывы" vertex="1">
+          <mxGeometry height="80" width="310" x="340" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1.5;fontSize=13;align=left;spacing=7;" value="&lt;b&gt;Auth&lt;/b&gt;&lt;br&gt;Регистрация, авторизация,&lt;br&gt;права пользователей" vertex="1">
+          <mxGeometry height="65" width="350" x="740" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="properties" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1.5;fontSize=13;align=left;spacing=7;" value="&lt;b&gt;Properties&lt;/b&gt;&lt;br&gt;Добавление, изменение и просмотр жилья" vertex="1">
+          <mxGeometry height="65" width="350" x="740" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="prices" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1.5;fontSize=13;align=left;spacing=7;" value="&lt;b&gt;Prices&lt;/b&gt;&lt;br&gt;Цены и история изменений" vertex="1">
+          <mxGeometry height="65" width="350" x="740" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="analytics" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1.5;fontSize=13;align=left;spacing=7;" value="&lt;b&gt;Analytics&lt;/b&gt;&lt;br&gt;Средние цены и статистика по районам" vertex="1">
+          <mxGeometry height="65" width="350" x="740" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="prediction" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1.5;fontSize=13;align=left;spacing=7;" value="&lt;b&gt;Prediction / ИИ&lt;/b&gt;&lt;br&gt;Подготовка данных, обращение к ML-модели" vertex="1">
+          <mxGeometry height="65" width="350" x="740" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="reviews" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1.5;fontSize=13;align=left;spacing=7;" value="&lt;b&gt;Reviews&lt;/b&gt;&lt;br&gt;Отзывы пользователей" vertex="1">
+          <mxGeometry height="65" width="350" x="740" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1.5;fontSize=13;align=left;spacing=7;" value="&lt;b&gt;Admin&lt;/b&gt;&lt;br&gt;Проверка объявлений и управление данными" vertex="1">
+          <mxGeometry height="65" width="350" x="740" y="625" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="tenant" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=12;labelBackgroundColor=#ffffff;" target="search" value="Браузер">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="landlord" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=12;labelBackgroundColor=#ffffff;" target="cards" value="Браузер">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="adminuser" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=12;labelBackgroundColor=#ffffff;" target="profile" value="Браузер">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="forecastform" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=12;labelBackgroundColor=#ffffff;" target="prediction" value="HTTPS / REST API / JSON">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="prediction" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=none;strokeWidth=2;fontSize=12;labelBackgroundColor=#ffffff;" target="forecastform" value="Ответ JSON">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="prices" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=12;labelBackgroundColor=#ffffff;" target="db" value="SQL-запросы">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="db" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=none;strokeWidth=2;fontSize=12;labelBackgroundColor=#ffffff;" target="properties" value="Данные / результаты">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="prediction" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=12;labelBackgroundColor=#ffffff;" target="ml" value="Характеристики жилья">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="ml" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=none;strokeWidth=2;fontSize=12;labelBackgroundColor=#ffffff;" target="prediction" value="Прогнозируемая цена">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="sources" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;dashed=1;fontSize=12;labelBackgroundColor=#ffffff;" target="ml" value="Дополнительные данные">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
